@@ -13,6 +13,14 @@ makedocs(;
         canonical="https://zlatanvasovic.github.io/ChemEquations.jl",
         assets=String[],
         analytics="UA-33643623-2",
+        mathengine = MathJax3(Dict(
+                :loader => Dict("load" => ["[tex]/physics"]),
+                :tex => Dict(
+                "inlineMath" => [["\$","\$"], ["\\(","\\)"]],
+                "tags" => "ams",
+                "packages" => ["base", "ams", "autoload", "physics"],
+            ),
+        ))
     ),
     pages=[
         "Home" => "index.md",
