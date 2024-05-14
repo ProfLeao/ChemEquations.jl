@@ -5,7 +5,7 @@ and columns correspond to compounds.
 # Examples
 ```jldoctest
 julia> equationmatrix(ce"H2 + Cl2 → HCl")
-2×3 Array{Int64,2}:
+2×3 Matrix{Int64}:
  2  0  1
  0  2  1
 ```

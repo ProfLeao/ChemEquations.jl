@@ -201,7 +201,7 @@ Returns compound's elements as strings.
 # Examples
 ```jldoctest
 julia> elements(cc"CH3COOH")
-3-element Array{String,1}:
+3-element Vector{String}:
  "C"
  "H"
  "O"
